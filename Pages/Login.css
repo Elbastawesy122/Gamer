@@ -1,0 +1,116 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.login .text .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 13%);
+    padding: 20px;
+    border-radius: 0 10px 0 10px;
+    position: relative;
+}
+.login .text .box::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #186ba3;
+}
+.login .text .box::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 0% 50% 50% 50%;
+    background-color: #186ba3;
+}
+.login .text .box h1{
+    margin: 0;
+    font-size: 30px;
+    font-family: -webkit-body;
+    color: #242b5be8;
+    margin: 15px 0;
+}
+.login .text .box p{
+    margin: 0;
+    text-align: start;
+    font-size: 17px;
+    font-family: serif;
+    font-weight: bold;
+    color: #828289;
+}
+.login .text .box .text{
+    height: 5px;
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    position: relative;
+    background-color: #d5bcbc;
+}
+.login .text .box .password{
+    height: 5px;
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    margin: 10px 10px 0;
+    font-size: 12px;
+    position: relative;
+    background-color: #d5bcbc;
+}
+.login .text .box .password:focus,
+.login .text .box .text:focus{
+    outline: none;
+}
+.login .text .box .checkbox{
+    display: flex;
+    text-align: start;
+}
+.login .text .box .submit{
+    width: 223px;
+    border-radius: 2px;
+    border: none;
+    padding: 4px;
+    margin: 7px;
+    font-size: 17px;
+    font-family: math;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #158c9d;
+    color: white;
+}
+.login .text .box .forget{
+    text-decoration: none;
+}
+.login .text .box .icoons{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    margin: 5px 5px 0;
+    border-top: 1px solid #158c9d;
+    padding: 10px;
+}
+.login .text .box .icon{
+    color: #4f4fdf;
+    font-size: 25px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}

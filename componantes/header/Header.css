@@ -1,0 +1,136 @@
+
+.box .text{
+    background-color: #242b5be8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+   
+}
+.box img{
+    width: 85px;
+}
+.box .ele a{
+    color: #72a6e9fa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+.box .icon{
+    display: flex;
+    align-items: center;
+}
+.box .icon .alogin{
+    text-decoration: none;
+    border-left: 1px solid #70a2e5;
+    padding: 3px 5px;
+    font-size: 13px;
+    color: #70a2e5;
+}
+.box .icon .MdFavorite,
+.box .icon .FaListUl{
+    margin: 5px;
+    font-size: 21px;
+    color: #f6fbffc2;
+    width: 35px;
+    cursor: pointer;
+}
+@media (min-width: 741px){
+    .box .icon .FaListUl{
+        display: none;
+    }
+}
+@media (max-width: 740px){
+    .box .ele.active{
+        z-index: 200;
+        right: 10px;
+    }
+    .box .icon .FaListUl{
+        display: inline;
+    }
+    .box .ele{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #0d1863;
+        width: 80%;
+        height: fit-content;
+        z-index: -200;
+        right: 2000px;
+        opacity: 0.9;
+    }
+    .box .ele a{
+        font-size: 27px;
+        margin: 30px;
+        color: #f6fbffc2;
+        font-weight: bold;
+        border-bottom: 1px solid #f6fbffc2;
+    }
+}
+.box .test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #186ba3;
+    padding: 6px 15px;
+    text-align: center;
+    margin: auto;
+}
+.box .test input{
+    height: 15px;
+    width: 325px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    margin: 10px 10px 10px 0;
+    opacity: 0.8;
+    font-size: 18px;
+    transition: 0.3s;
+    font-family: cursive;
+}
+.box .test input:focus{
+    outline: none;
+
+}
+.box .test button{
+    height: 45px;
+    width: 89px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #72a6e9fa;
+    transition: 0.3s;
+    font-family: cursive;
+}
+.box .test button:hover{
+    /* height: 60px;
+    width: 96px;
+    font-size: 18px; */
+    letter-spacing: 1px;
+}@media (max-width: 741px){
+    .box .test{
+        flex-direction: column;
+    }
+    .box .test input{
+        width: 290px;
+    }
+    .box .test input:hover{
+        width: 280px;
+    }
+    .box .test button{
+        width: 230px;
+        margin-top: 5px;
+    }
+    .box .test button:hover{
+        width: 220px;
+    }
+}

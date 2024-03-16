@@ -1,0 +1,86 @@
+.Favoritee{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(225px,1fr));
+    gap: 6px;
+    margin: 10px;
+}
+.Favoritee .teest{
+    background-color: #e3d9d9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #186ba3;
+    box-shadow: 6px 8px 7px 10px #f1e5e5;
+    width: fit-content;
+}
+.Favoritee img{
+    width: 260px;
+}
+@media (max-width: 741px){
+    .Favoritee img{
+        width: 320px;
+    }
+}
+.Favoritee .teest .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px 0px;
+    background-color: white;
+}
+.Favoritee .teest .text a{
+    text-decoration: none;
+}
+.Favoritee .teest .text h1{
+    margin: 0;
+    color: #186ba3;
+    font-size: 25px;
+    font-family: auto;
+    font-weight: bold;
+}
+.Favoritee .teest .text .icon{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 5px;
+}
+.Favoritee .teest .text .icon .faaav{
+    width: 25px;
+    height: 25px;
+    color: #ff00c6;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #186ba3;
+}
+.Favoritee .teest .text .star{
+    color: yellow;
+    padding: 3px;
+}
+.Favoritee .teest .text .genre{
+    margin: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    color: #70a2e5;
+}
+.Favoritee .teest .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Favoritee .teest .play p{
+    margin: 5px;
+    font-size: 18px;
+    font-family: inherit;
+    color: #ff00c6;
+    font-weight: 700;
+}
+.Favoritee .teest .play .arrow{
+    font-size: 20px;
+    color: #186ba3;
+}

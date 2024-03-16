@@ -1,0 +1,77 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #373e69;
+}
+.footer .conc{
+    margin: auto 0;
+}
+.footer .loc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #70a2e5;
+}
+.footer .loc p{
+    margin: 25px 10px;
+}
+.footer .ele h1{
+    font-family: cursive;
+    color: #ff00c6;
+}
+.footer .sochyal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .sochyal a{
+    width: 25px;
+    height: 25px;
+    font-size: 26px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+.footer .sochyal .fac{
+    background-color: #5d5ddd;
+}
+.footer .sochyal .insta{
+    background-image: linear-gradient(#fb00ff, #e2fd12bd);
+}
+.footer .sochyal .whats{
+    background-color: #14c514;
+}
+.footer .ele{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.footer .ele a{
+    color: #72a6e9fa;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.made{
+    text-align: center;
+    background-color: #373e69;
+}
+.made p{
+    margin: -1px;
+    font-size: 20px;
+    padding: 10px;
+    color: #72a6e9fa;
+}
+@media (max-width: 740px){
+    .footer{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #373e69;
+    }
+}

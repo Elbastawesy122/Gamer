@@ -1,0 +1,72 @@
+body{
+    font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+}
+.box1{
+    background-size: cover;
+    height: 73vh;
+    position: relative;
+}
+.box1 .tel{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tel::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -90px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 0%;
+    background-color: #186ba3;
+}
+.tel::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -90px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 0%;
+    background-color: #186ba3;
+}
+.box1 .tel h1{
+    font-size: 55px;
+    font-family: cursive;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+    color: #186ba3;;
+}
+.box1 .tel p{
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+    color: #70a2e5;
+    text-transform: uppercase;
+}
+@media (max-width: 740px){
+    .box1 .tel h1{
+        font-size: 30px;
+    }
+    .box1 .tel p{
+        font-size: 19px;
+    }
+}
+.box1 .image{
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    z-index: -1;
+}
+.box1 .image img{
+    width: 400px;
+}
