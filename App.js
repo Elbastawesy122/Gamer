@@ -9,20 +9,22 @@ import Login from './Pages/Login';
 import Play from './Pages/Play';
 import Favorite from './Pages/Favorite';
 import { useState } from 'react';
-
+import List from './componantes/List/List';
 
 function App() {
 
-  const [ cartitems , setcartitems] = useState([]);
+
+  const [cartitems, setCartItems] = useState([]);
 
   const handleFavoriteClick = (product) => {
     const productExist = cartitems.find((item) => item === product);
     if (productExist) {
-      setcartitems(cartitems.map((item) => (item === product ? { ...productExist } : item)));
+      setCartItems(cartitems.filter((item) => item !== product));
     } else {
-      setcartitems([...cartitems, { ...productExist }]);
+      setCartItems([...cartitems, product]);
     }
   };
+
   
 
   return (
@@ -32,9 +34,9 @@ function App() {
       <div className='router'>
         <Routes>
           <Route path='login' element={<Login/>}/>
-          <Route path='/' element={ <Home/>}/>
-          <Route path='play' element={<Play/>}/>
-          <Route path='favorite' element={<Favorite cartitems={cartitems} handleFavoriteClick={handleFavoriteClick}/>}/>
+          <Route path='/' element={ <Home handleFavoriteClick={handleFavoriteClick}/>}/>
+          <Route path='/Play/:id' element={<Play/>}/>
+          <Route path='favorite' element={<Favorite cartitems={cartitems} />}/>
         </Routes>
       </div>
       <Footer/>

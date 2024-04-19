@@ -1,11 +1,11 @@
 import React from "react";
 import image from "../../image/game2.png";
-import Lists from "../List/Lists";
+import List from "../List/List";
 import './Home.css';
 import 'google-fonts';
 
 
-function Home(){
+function Home({handleFavoriteClick}){
  return(
     <>
     <div className="home">
@@ -19,7 +19,7 @@ function Home(){
         </div>
       </div>
     </div>
-    <Lists />
+    <List handleFavoriteClick={handleFavoriteClick} />
     </>
  )
 }

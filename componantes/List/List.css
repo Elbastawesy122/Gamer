@@ -1,0 +1,178 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #186ba3;
+}
+.header img{
+    width: 220px;
+}
+.header h1{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+}
+.header p{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+@media (max-width: 741px){
+    .header img{
+        width: 180px;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .header p{
+       font-size: 13px;
+    }
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(225px,1fr));
+    gap: 5px;
+    margin: 10px;
+    overflow: auto;
+    height: 400px;
+}
+.list.active{
+    height: fit-content;
+}
+.down{
+    position: relative;
+    
+}
+.down .downe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #70a2e5;
+    text-align: center;
+    color: #186ba3;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 24px;
+    margin: 10px auto;
+    animation: TobDown 0.5s  infinite;
+}
+@keyframes TobDown {
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: -13px;
+    }
+    50%{
+        bottom: 0;
+    }
+    75%{
+        bottom: -13px;
+    }
+    100%{
+        bottom: 0px;
+    }
+    
+}
+.AngleUp.active{
+    display: none;
+}
+.ngleDown.active{
+    display: none;
+}
+.list::-webkit-scrollbar{
+    width: 10px;
+}
+.list::-webkit-scrollbar-track{
+    background-color: #f1e5e5;
+    box-shadow: 0px 0px 10px #eee inset;
+    border-radius: 10px;
+}
+.list::-webkit-scrollbar-thumb{
+    background-color: #70a2e5;
+    border-radius: 10px;
+}
+.list::-webkit-scrollbar-thumb:hover {
+    background-color: #186ba3;
+    height: 6px;
+}
+.list .teest{
+    background-color: #e3d9d9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #186ba3;
+    box-shadow: 6px 8px 7px 10px #f1e5e5;
+    height: fit-content;
+}
+.list .teest .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px 0px;
+    background-color: white;
+}
+.list .teest .text a{
+    text-decoration: none;
+}
+.list .teest .text h1{
+    margin: 0;
+    color: #186ba3;
+    font-size: 20px;
+    font-family: auto;
+    font-weight: bold;
+}
+.list .teest .text .icon{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 5px;
+}
+.list .teest .text .icon .faaav{
+    width: 25px;
+    height: 25px;
+    color: #ff00c6;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #186ba3;
+}
+.list .teest .text .star{
+    color: yellow;
+    padding: 3px;
+}
+.list .teest .text .genre{
+    margin: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    color: #70a2e5;
+}
+.list .teest .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.list .teest .play p{
+    margin: 5px;
+    font-size: 18px;
+    font-family: inherit;
+    color: #ff00c6;
+    font-weight: 700;
+}
+.list .teest .play .arrow{
+    font-size: 20px;
+    color: #186ba3;
+}

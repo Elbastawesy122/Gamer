@@ -3,9 +3,7 @@ import images from '../../image/logogame.png';
 import { MdFavorite } from "react-icons/md";
 import { FaListUl } from "react-icons/fa";
 import Login from '../../Pages/Login';
-import {
-  Link,
-} from "react-router-dom";
+import { Link} from "react-router-dom";
 import 'google-fonts';
 import './Header.css';
 
@@ -36,11 +34,8 @@ function Header() {
         <img src={images} alt="Header Image" />
         </Link>
         <div className={`ele ${istextinput ? 'active' : ''}`}>
-        <a href="#">Shooter</a>
-        <a href="#">Sports</a>
-        <a href="#">Card Game</a>
-        <a href="#">Strategy</a>
-        <a href="#">Fighting</a>
+        <a href="#PC">PC (Windows)</a>
+        <a href="#Web">Web Browser</a>
         </div>
         <div className="icon">
           <Link to={'/Favorite'}>

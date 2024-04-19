@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
 }
-.box .icon .alogin{
+.box .alogin{
     text-decoration: none;
     border-left: 1px solid #70a2e5;
     padding: 3px 5px;
@@ -56,7 +56,7 @@
         flex-direction: column;
         position: absolute;
         top: 60px;
-        background-color: #0d1863;
+        background-color: #186ba3;
         width: 80%;
         height: fit-content;
         z-index: -200;
